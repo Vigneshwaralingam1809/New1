@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M VIGNESHWARALINGAM - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background: white;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M VIGNESHWARALINGAM</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certificates">Certificates</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Motivated BE Computer Science student with expertise in Python, HTML/CSS, and JavaScript. Eager to apply web development skills and data visualization expertise in a dynamic role. Committed to contributing innovative solutions and driving project success.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Surya Engineering College</strong> - BE in Computer Science (Pursuing), CGPA: 7.71/10</li>
+            <li><strong>Sri RKC HR Sec School</strong> - HSC Mathematics Top Scorer (Graduated: May 2021, Percentage: 90.3%)</li>
+            <li><strong>TDTA HR Sec School</strong> - SSC School 3rd Rank (Graduated: May 2019, Percentage: 82.2%)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Keylogger</strong> - Developed a powerful keylogger application using Python libraries (Tkinter, Pynput, JSON).</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Phone: 9047182570</p>
+        <p>Email: m.vigneshwaralingam@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/vigneshwaralingam-m" target="_blank">linkedin.com/in/vigneshwaralingam-m</a></p>
+        <p>GitHub: <a href="https://github.com/vigneshwaralingam1809" target="_blank">github.com/vigneshwaralingam1809</a></p>
+        <p>CodeChef: <a href="https://www.codechef.com/users/vignesh1809m" target="_blank">codechef.com/users/vignesh1809m</a></p>
+        <a href="resume.pdf" class="download-btn" download>Download My Resume</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Microsoft Office</li>
+            <li>Canva</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>WordPress (Beginner)</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Workshop on Matplotlib Data Visualization</strong> - Mastered Matplotlib for dynamic data visualizations.</li>
+            <li><strong>Guest Lecturer on Database Management Systems</strong> - Engaged students with interactive discussions, improving DBMS understanding by 25%.</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Event Organizer, Logo Design Competitions, March 2024</li>
+            <li>Outstanding Volunteer Award, 34th Tamilnadu U13 Open & Girls Championship 2022</li>
+            <li>National Means Cum Merit Scholarship, Tuticorin</li>
+        </ul>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Python Beginner Course by Edu Prep - Issued on March 23, 2024</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 M VIGNESHWARALINGAM</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
